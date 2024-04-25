@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after,
+html,
+body {
+  box-sizing: border-box;
+  font: var(--ce-font-roboto-normal);
+}
+
+h1 {
+  font: var(--ce-font-roboto-bold-3xl);
+}
+h2 {
+  font: var(--ce-font-roboto-bold-2xl);
+}
+h3 {
+  font: var(--ce-font-roboto-bold-xl);
+}
+h4 {
+  font: var(--ce-font-roboto-bold-lg);
+}
+h5 {
+  font: var(--ce-font-roboto-bold);
+}
+h6 {
+  font: var(--ce-font-roboto-bold-sm);
+}
+
+p {
+  font: var(--ce-font-roboto-normal);
+}
