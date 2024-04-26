@@ -2,22 +2,16 @@
   --------------------------------------------------------------------------------------------------
   SETTINGS
   --------------------------------------------------------------------------------------------------
-  Size                        'xs', 'sm', 'base', 'lg', 'xl'
   Variant                     'base', 'secondary', 'warning', 'error', 'submit'
-  Align                       'base', 'center', 'right'
-  Active                      Boolean
-  Fill                        Boolean
-  Transparent                 Boolean
-  Rounded                     Boolean
   Disabled                    Boolean
 */
 
 import CreateElement from '../../createElement.js';
 import { CEIcon } from '../init.js';
 
-class CEButton extends CreateElement {
+class CELink extends CreateElement {
   constructor(children, settings, attributes, events) {
-    super('button', [], attributes, events);
+    super('a', [], { target: '_blank', ...(attributes || {}) }, events);
 
     this.settings = {};
 
@@ -27,10 +21,13 @@ class CEButton extends CreateElement {
 
   setSettings(settings) {
     this.updateAttributes({
-      type: 'button',
+      target: '_blank',
       ...this.attributes,
-      class: [...(this.attributes?.class || []), 'ce-button'],
-      dataset: { fill: true, ...settings },
+      class: [...(this.attributes?.class || []), 'ce-link'],
+      dataset: {
+        ...(this.attributes?.dataset || {}),
+        ...settings,
+      },
       disabled: Boolean(settings?.disabled),
     });
 
@@ -44,14 +41,14 @@ class CEButton extends CreateElement {
       if (child instanceof CEIcon) {
         child.updateAttributes({
           ...child.attributes,
-          class: [...(child.attributes?.class || []), 'ce-button__icon'],
+          class: [...(child.attributes?.class || []), 'ce-link__icon'],
         });
         child.setSettings({ type: 'rounded', ...child.settings });
       } else if (typeof child === 'string') {
         children[i] = new CreateElement(
           'span',
           [child?.element?.textContent || child],
-          { class: ['ce-button__caption'] },
+          { class: ['ce-link__caption'] },
         );
       }
     }
@@ -60,4 +57,4 @@ class CEButton extends CreateElement {
   }
 }
 
-export default CEButton;
+export default CELink;

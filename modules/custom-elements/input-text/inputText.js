@@ -22,9 +22,9 @@ import { CEButton, CEIcon } from '../init.js';
 
 class CEInputText extends CreateElement {
   constructor(children, settings, attributes, events) {
-    super('div', attributes, [], events);
+    super('div', [], attributes, events);
 
-    this.inputChild = new CreateElement('input', {
+    this.inputChild = new CreateElement('input', [], {
       type: 'text',
       class: ['ce-input__field'],
     });

@@ -4,12 +4,12 @@ import { CEButton, CEIcon } from '../init.js';
 
 class CECheckbox extends CreateElement {
   constructor(children, settings, attributes, events) {
-    super('label', attributes, [], events);
+    super('label', [], attributes, events);
 
     this.checkboxInput = new CreateElement(
       'input',
-      { type: 'checkbox', class: ['ce-checkbox__input'] },
       [],
+      { type: 'checkbox', class: ['ce-checkbox__input'] },
       [
         ['change', (event) => { this.setSettings({ ...this.settings, checked: event.target.checked }); }],
       ],
@@ -22,7 +22,7 @@ class CECheckbox extends CreateElement {
         ['click', () => { this.setSettings({ ...this.settings, checked: !this.checkboxInput.attributes.checked }); }]
       ],
     );
-    this.checkboxLabel = new CreateElement('span', { class: ['ce-checkbox__label'] });
+    this.checkboxLabel = new CreateElement('span', [], { class: ['ce-checkbox__label'] });
 
     this.settings = {};
 

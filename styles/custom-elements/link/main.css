@@ -1,0 +1,17 @@
+.ce-link {
+  color: rgba(var(--ce-color-sky-400));
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.ce-link .ce-link__caption {
+  color: inherit;
+  font: var(--ce-font-roboto-medium);
+}
+
+.ce-link:hover {
+  color: rgba(var(--ce-color-sky-200));
+}

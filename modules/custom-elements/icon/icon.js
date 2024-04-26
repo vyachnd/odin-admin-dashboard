@@ -17,7 +17,7 @@ import CreateElement from '../../createElement.js';
 
 class CEIcon extends CreateElement {
   constructor(icon, settings, attributes) {
-    super('span', attributes);
+    super('span', [], attributes);
 
     this.icon = '';
     this.settings = {};
