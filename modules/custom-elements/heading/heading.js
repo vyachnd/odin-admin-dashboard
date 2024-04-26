@@ -8,7 +8,7 @@
 */
 
 import CreateElement from '../../createElement.js';
-import { CEIcon } from '../init.js';
+import { CEIcon, CELink } from '../init.js';
 
 class CEHeading extends CreateElement {
   constructor(settings, attributes) {
@@ -20,7 +20,7 @@ class CEHeading extends CreateElement {
           new CreateElement('h1', [settings?.title || 'Title'], { class: ['ce-heading__title'] }),
           new CreateElement('p', [
             'by ',
-            new CreateElement('a', ['vyachnd'], { href: 'https://www.github.com/vyachnd', target: '_blank', class: ['ce-heading__link'] }),
+            new CELink(['vyachnd'], { size: 'sm', variant: settings?.variant }, { href: 'https://www.github.com/vyachnd', class: ['ce-heading__link'] }),
           ], { class: ['ce-heading__subtitle'] }),
         ], { class: ['ce-heading__container'] }),
       ].filter((child) => child),

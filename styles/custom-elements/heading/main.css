@@ -1,12 +1,3 @@
-/*
-  .ce-heading
-  .ce-heading .ce-icon
-  .ce-heading .ce-heading__container
-  .ce-heading .ce-heading__container .ce-heading__title
-  .ce-heading .ce-heading__container .ce-heading__subtitle
-  .ce-heading .ce-heading__container .ce-heading__subtitle .ce-heading__subtitle.ce-heading__link
-*/
-
 /* Variants */
 @import './variants/base.css';
 @import './variants/error.css';
@@ -16,9 +7,6 @@
 
 /* Appereance */
 @import './appereance.css';
-
-/* Interactive */
-@import './interactive.css';
 
 .ce-heading {
   display: flex;
@@ -42,11 +30,8 @@
 }
 
 .ce-heading .ce-heading__subtitle {
+  display: flex;
+  align-items: center;
   font: var(--ce-font-roboto-medium-xs);
-}
-
-.ce-heading .ce-heading__link {
-  font: var(--ce-font-roboto-medium-xs);
-  text-decoration: none;
-  transition: color 0.15s;
+  white-space: break-spaces;
 }

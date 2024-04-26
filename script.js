@@ -1,13 +1,13 @@
 import CreateElement from './modules/createElement.js';
-import { CEIcon, CELink } from './modules/custom-elements/init.js';
+import { CEHeading } from './modules/custom-elements/init.js';
 
 
 const app = new CreateElement('div', [
-  new CELink(['Hello', new CEIcon('chevron_right')], {}, { href: 'https://www.github.com/vyachnd' }),
-  new CELink(['Hello', new CEIcon('chevron_right')], { variant: 'secondary' }, { href: 'https://www.github.com/vyachnd' }),
-  new CELink(['Hello', new CEIcon('chevron_right')], { variant: 'submit' }, { href: 'https://www.github.com/vyachnd' }),
-  new CELink(['Hello', new CEIcon('chevron_right')], { variant: 'warning' }, { href: 'https://www.github.com/vyachnd' }),
-  new CELink(['Hello', new CEIcon('chevron_right')], { variant: 'error' }, { href: 'https://www.github.com/vyachnd' }),
+  new CEHeading({ title: 'Odin Dashboard', icon: 'dashboard' }),
+  new CEHeading({ title: 'Odin Dashboard', icon: 'dashboard', variant: 'secondary' }),
+  new CEHeading({ title: 'Odin Dashboard', icon: 'dashboard', variant: 'submit' }),
+  new CEHeading({ title: 'Odin Dashboard', icon: 'dashboard', variant: 'warning' }),
+  new CEHeading({ title: 'Odin Dashboard', icon: 'dashboard', variant: 'error' }),
 ]);
 
 app.mount(document.body, true);

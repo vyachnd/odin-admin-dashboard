@@ -5,7 +5,3 @@
 .ce-heading .ce-heading__subtitle {
   color: var(--subtitle-color);
 }
-
-.ce-heading .ce-heading__link {
-  color: var(--link-color);
-}
