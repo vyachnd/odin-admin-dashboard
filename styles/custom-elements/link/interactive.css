@@ -1,0 +1,13 @@
+.ce-link:not(:disabled):hover,
+.ce-link:not(:disabled):focus-visible:hover {
+  color: var(--link-color_hover);
+}
+
+.ce-link:not(:disabled):active,
+.ce-link:not(:disabled):focus-visible:active {
+  color: var(--link-color_active);
+}
+
+.ce-link:not(:disabled):focus-visible {
+  color: var(--link-color_focus);
+}

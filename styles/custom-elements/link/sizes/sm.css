@@ -1,0 +1,11 @@
+.ce-link[data-size='sm'] {
+  gap: 2px;
+}
+
+.ce-link[data-size='sm'] .ce-link__caption {
+  font: var(--ce-font-roboto-medium-sm);
+}
+
+.ce-link[data-size='sm'] .ce-link__icon {
+  font-size: 20px;
+}

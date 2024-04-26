@@ -1,0 +1,5 @@
+.ce-link:disabled,
+.ce-link[data-disabled] {
+  opacity: 0.24;
+  pointer-events: none;
+}

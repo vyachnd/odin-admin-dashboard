@@ -1,0 +1,11 @@
+.ce-link {
+  gap: 4px;
+}
+
+.ce-link .ce-link__caption {
+  font: var(--ce-font-roboto-medium);
+}
+
+.ce-link .ce-link__icon {
+  font-size: 24px;
+}

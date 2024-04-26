@@ -1,0 +1,7 @@
+.ce-link {
+  --link-color: rgba(var(--ce-color-zinc-50), 1);
+  --link-color_hover: rgba(var(--ce-color-zinc-50), 0.8);
+  --link-color_active: rgba(var(--ce-color-zinc-50), 0.6);
+  --link-color_focus: rgba(var(--ce-color-zinc-50), 0.8);
+  --link-color_visited: rgba(var(--ce-color-zinc-50), 0);
+}
