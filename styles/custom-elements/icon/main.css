@@ -1,10 +1,29 @@
+/* Types */
+@import './types/outlined.css';
+@import './types/rounded.css';
+@import './types/sharp.css';
+
+/* Size */
+@import './sizes/base.css';
+@import './sizes/sm.css';
+@import './sizes/xs.css';
+
+/* Variants */
+@import './variants/base.css';
+@import './variants/error.css';
+@import './variants/secondary.css';
+@import './variants/submit.css';
+@import './variants/warning.css';
+
+/* Appereance */
+@import './appereance.css';
+
 .ce-icon {
   display: inline-block;
   direction: ltr;
 
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
 
   line-height: 1;
   letter-spacing: normal;
@@ -19,14 +38,4 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.ce-icon[data-type='outlined'] {
-  font-family: 'Material Symbols Outlined';
-}
-.ce-icon[data-type='rounded'] {
-  font-family: 'Material Symbols Rounded';
-}
-.ce-icon[data-type='sharp'] {
-  font-family: 'Material Symbols Sharp';
 }

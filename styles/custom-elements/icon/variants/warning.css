@@ -1,0 +1,3 @@
+.ce-icon[data-variant='warning'] {
+  --icon-color: rgba(var(--ce-color-yellow-400), 1);
+}

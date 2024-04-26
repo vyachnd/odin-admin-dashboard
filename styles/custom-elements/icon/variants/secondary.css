@@ -1,0 +1,3 @@
+.ce-icon[data-variant='secondary'] {
+  --icon-color: rgba(var(--ce-color-sky-400), 1);
+}

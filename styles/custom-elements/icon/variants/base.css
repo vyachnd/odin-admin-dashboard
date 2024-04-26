@@ -1,0 +1,4 @@
+.ce-icon,
+.ce-icon[data-variant='base'] {
+  --icon-color: rgba(var(--ce-color-zinc-50), 1);
+}

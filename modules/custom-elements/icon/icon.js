@@ -6,6 +6,8 @@
   --------------------------------------------------------------------------------------------------
   SETTINGS
   --------------------------------------------------------------------------------------------------
+  Variant                     'base', 'secondary', 'submit', 'warning', 'error'
+  Size                        'base', 'sm', 'xs'
   Type                        'outlined', 'rounded', 'sharp'
   Wght                        100, 200, 300, 400, 500, 600, 780
   Grade                       -25, 0, 200
@@ -28,7 +30,7 @@ class CEIcon extends CreateElement {
 
   setSettings(settings) {
     const fontVariationSettings = `
-      'FILL' ${+settings?.fill || 0},
+      'FILL' ${settings?.hasOwnProperty('fill') ? +settings?.fill : 1},
       'wght' ${settings?.wght || 400},
       'GRAD' ${settings?.grad || 0},
       'opsz' ${settings?.opsz || 24}
@@ -37,7 +39,7 @@ class CEIcon extends CreateElement {
     this.updateAttributes({
       ...this.attributes,
       class: [...(this.attributes?.class || []), 'ce-icon'],
-      dataset: { ...(this.attributes.dataset || {}), type: settings?.type || 'outlined' },
+      dataset: { ...(this.attributes.dataset || {}), type: 'rounded', ...settings, },
       style: { fontVariationSettings },
     });
 

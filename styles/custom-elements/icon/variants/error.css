@@ -1,0 +1,3 @@
+.ce-icon[data-variant='error'] {
+  --icon-color: rgba(var(--ce-color-red-400), 1);
+}
