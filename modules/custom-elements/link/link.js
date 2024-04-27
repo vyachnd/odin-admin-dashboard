@@ -32,6 +32,7 @@ class CELink extends CreateElement {
 
     this.updateAttributes({
       target: '_blank',
+      href: '#',
       ...this.attributes,
       class: [...(this.attributes?.class || []), 'ce-link'],
       dataset: {
