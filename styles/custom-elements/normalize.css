@@ -1,0 +1,39 @@
+/* Set default font */
+html,
+body {
+  font: var(--fnt-roboto);
+}
+
+/* Heading size */
+h1 {
+  font: var(--fnt-roboto_black_3xl);
+}
+
+h2 {
+  font: var(--fnt-roboto_black_2xl);
+}
+
+h3 {
+  font: var(--fnt-roboto_black_xl);
+}
+
+h4 {
+  font: var(--fnt-roboto_black_lg);
+}
+
+h5 {
+  font: var(--fnt-roboto_black_sm);
+}
+
+h6 {
+  font: var(--fnt-roboto_black_xs);
+}
+
+/* Link */
+a {
+  color: rgba(var(--clr-sky_400));
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(var(--clr-sky_600));
+}

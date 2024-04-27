@@ -2,6 +2,9 @@
 @import './third-party/normalize.css';
 @import './third-party/reset.css';
 
+/* Normalize */
+@import './normalize.css';
+
 /* Colors */
 @import './colors.css';
 
