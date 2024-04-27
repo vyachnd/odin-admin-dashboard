@@ -173,10 +173,14 @@ class CreateElement {
         for (let j = 0; j < oldDatasetKeys.length; j += 1) {
           const oldDatasetKey = oldDatasetKeys[j];
           const datasetValue = attribute?.[oldDatasetKey];
+          console.log(oldDatasetKey, datasetValue);
 
           if (
             !attribute.hasOwnProperty(oldDatasetKey)
-            || (datasetValue === false && this.element.dataset.hasOwnProperty(oldDatasetKey))
+            || (
+              (datasetValue === false || helpers.isNullOrUndefined(datasetValue))
+              && this.element.dataset.hasOwnProperty(oldDatasetKey)
+            )
           ) {
             delete this.element.dataset[oldDatasetKey];
           }
