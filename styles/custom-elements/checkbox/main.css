@@ -22,5 +22,5 @@
 /* Label */
 .ce-checkbox .ce-checkbox__label {
   color: rgba(var(--ce-color-zinc-200));
-  font: var(--ce-font-roboto-normal);
+  font: var(--ce-fonts_roboto);
 }

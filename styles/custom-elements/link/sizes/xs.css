@@ -3,7 +3,7 @@
 }
 
 .ce-link[data-size='xs'] .ce-link__caption {
-  font: var(--ce-font-roboto-medium-xs);
+  font: var(--ce-fonts_roboto_medium_xs);
 }
 
 .ce-link[data-size='xs'] .ce-link__icon {

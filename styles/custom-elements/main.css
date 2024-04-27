@@ -3,9 +3,9 @@
 
 /* Globals */
 @import './__globals/colors.css';
-@import './__globals/fonts.css';
 @import './__globals/typography.css';
 @import './__globals/positioning.css';
+@import './__globals/fonts/main.css';
 
 /* Elements */
 @import './button/main.css';

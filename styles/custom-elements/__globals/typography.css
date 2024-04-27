@@ -1,31 +1,59 @@
-*,
-*::before,
-*::after,
-html,
-body {
-  box-sizing: border-box;
-  font: var(--ce-font-roboto-normal);
-}
+/*
+  xs          -       12px    / 16        -       | 0.75rem   / 1rem
+  sm          -       14px    / 20        -       | 0.875rem  / 1.25rem
+  base        -       16px    / 24        -       | 1rem      / 1.5rem
+  lg          -       16px    / 28        -       | 1rem      / 1.75rem
+  xl          -       20px    / 28        -       | 1.25rem   / 1.75rem
+  2xl         -       24px    / 32        -       | 1.5rem    / 2rem
+  3xl         -       30px    / 36        -       | 1.875rem  / 2.25rem
+  4xl         -       36px    / 40        -       | 2.25rem   / 2.5rem
+  5xl         -       48px    / 48        -       | 3rem      / 3rem
+  6xl         -       60px    / 60        -       | 3.75rem   / 3.75rem
+  7xl         -       72px    / 72        -       | 4.5rem    / 4.5rem
+  8xl         -       96px    / 96        -       | 6rem      / 6rem
+  9xl         -       128px   / 128       -       | 8rem      / 8rem
+*/
 
-h1 {
-  font: var(--ce-font-roboto-bold-3xl);
-}
-h2 {
-  font: var(--ce-font-roboto-bold-2xl);
-}
-h3 {
-  font: var(--ce-font-roboto-bold-xl);
-}
-h4 {
-  font: var(--ce-font-roboto-bold-lg);
-}
-h5 {
-  font: var(--ce-font-roboto-bold);
-}
-h6 {
-  font: var(--ce-font-roboto-bold-sm);
-}
+html {
+  --ce-typo__size_xs: 0.75rem;
+  --ce-typo__size_sm: 0.875rem;
+  --ce-typo__size: 1rem;
+  --ce-typo__size_lg: 1rem;
+  --ce-typo__size_xl: 1.25rem;
+  --ce-typo__size_2xl: 1.5rem;
+  --ce-typo__size_3xl: 1.875rem;
+  --ce-typo__size_4xl: 2.25rem;
+  --ce-typo__size_5xl: 3rem;
+  --ce-typo__size_6xl: 3.75rem;
+  --ce-typo__size_7xl: 4.5rem;
+  --ce-typo__size_8xl: 6rem;
+  --ce-typo__size_9xl: 8rem;
 
-p {
-  font: var(--ce-font-roboto-normal);
+  --ce-typo__line_xs: 1rem;
+  --ce-typo__line_sm: 1.25rem;
+  --ce-typo__line: 1.5rem;
+  --ce-typo__line_lg: 1.75rem;
+  --ce-typo__line_xl: 1.75rem;
+  --ce-typo__line_2xl: 2rem;
+  --ce-typo__line_3xl: 2.25rem;
+  --ce-typo__line_4xl: 2.5rem;
+  --ce-typo__line_5xl: 3rem;
+  --ce-typo__line_6xl: 3.75rem;
+  --ce-typo__line_7xl: 4.5rem;
+  --ce-typo__line_8xl: 6rem;
+  --ce-typo__line_9xl: 8rem;
+
+  --ce-typo_xs: var(--ce-typo__size_xs) / var(--ce-typo__line_xs);
+  --ce-typo_sm: var(--ce-typo__size_sm) / var(--ce-typo__line_sm);
+  --ce-typo: var(--ce-typo__size) / var(--ce-typo__line);
+  --ce-typo_lg: var(--ce-typo__size_lg) / var(--ce-typo__line_lg);
+  --ce-typo_xl: var(--ce-typo__size_xl) / var(--ce-typo__line_xl);
+  --ce-typo_2xl: var(--ce-typo__size_2xl) / var(--ce-typo__line_2xl);
+  --ce-typo_3xl: var(--ce-typo__size_3xl) / var(--ce-typo__line_3xl);
+  --ce-typo_4xl: var(--ce-typo__size_4xl) / var(--ce-typo__line_4xl);
+  --ce-typo_5xl: var(--ce-typo__size_5xl) / var(--ce-typo__line_5xl);
+  --ce-typo_6xl: var(--ce-typo__size_6xl) / var(--ce-typo__line_6xl);
+  --ce-typo_7xl: var(--ce-typo__size_7xl) / var(--ce-typo__line_7xl);
+  --ce-typo_8xl: var(--ce-typo__size_8xl) / var(--ce-typo__line_8xl);
+  --ce-typo_9xl: var(--ce-typo__size_9xl) / var(--ce-typo__line_9xl);
 }

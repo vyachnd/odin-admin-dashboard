@@ -1,0 +1,179 @@
+@import './weights.css';
+
+html {
+  --ce-fonts__font-roboto: 'Roboto', sans-serif;
+
+  /* Thin */
+  --ce-fonts__roboto_thin_xs: normal 100 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin_sm: normal 100 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin: normal 100 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin_lg: normal 100 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin_xl: normal 100 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin_2xl: normal 100 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin_3xl: normal 100 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin_4xl: normal 100 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin_5xl: normal 100 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin_6xl: normal 100 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin_7xl: normal 100 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin_8xl: normal 100 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin_9xl: normal 100 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+
+  --ce-fonts__roboto_thin-i_xs: italic 100 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i_sm: italic 100 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i: italic 100 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i_lg: italic 100 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i_xl: italic 100 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i_2xl: italic 100 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i_3xl: italic 100 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i_4xl: italic 100 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i_5xl: italic 100 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i_6xl: italic 100 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i_7xl: italic 100 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i_8xl: italic 100 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_thin-i_9xl: italic 100 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+
+  /* Light */
+  --ce-fonts__roboto_light_xs: normal 300 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light_sm: normal 300 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light: normal 300 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light_lg: normal 300 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light_xl: normal 300 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light_2xl: normal 300 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light_3xl: normal 300 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light_4xl: normal 300 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light_5xl: normal 300 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light_6xl: normal 300 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light_7xl: normal 300 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light_8xl: normal 300 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light_9xl: normal 300 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+
+  --ce-fonts__roboto_light-i_xs: italic 300 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i_sm: italic 300 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i: italic 300 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i_lg: italic 300 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i_xl: italic 300 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i_2xl: italic 300 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i_3xl: italic 300 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i_4xl: italic 300 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i_5xl: italic 300 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i_6xl: italic 300 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i_7xl: italic 300 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i_8xl: italic 300 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_light-i_9xl: italic 300 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+
+  /* Normal */
+  --ce-fonts__roboto_xs: normal 400 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_sm: normal 400 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto: normal 400 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_lg: normal 400 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_xl: normal 400 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_2xl: normal 400 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_3xl: normal 400 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_4xl: normal 400 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_5xl: normal 400 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_6xl: normal 400 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_7xl: normal 400 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_8xl: normal 400 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_9xl: normal 400 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+
+  --ce-fonts__roboto-i_xs: italic 400 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i_sm: italic 400 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i: italic 400 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i_lg: italic 400 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i_xl: italic 400 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i_2xl: italic 400 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i_3xl: italic 400 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i_4xl: italic 400 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i_5xl: italic 400 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i_6xl: italic 400 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i_7xl: italic 400 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i_8xl: italic 400 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto-i_9xl: italic 400 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+
+  /* Medium */
+  --ce-fonts__roboto_medium_xs: normal 500 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium_sm: normal 500 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium: normal 500 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium_lg: normal 500 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium_xl: normal 500 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium_2xl: normal 500 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium_3xl: normal 500 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium_4xl: normal 500 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium_5xl: normal 500 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium_6xl: normal 500 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium_7xl: normal 500 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium_8xl: normal 500 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium_9xl: normal 500 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+
+  --ce-fonts__roboto_medium-i_xs: italic 500 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i_sm: italic 500 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i: italic 500 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i_lg: italic 500 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i_xl: italic 500 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i_2xl: italic 500 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i_3xl: italic 500 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i_4xl: italic 500 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i_5xl: italic 500 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i_6xl: italic 500 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i_7xl: italic 500 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i_8xl: italic 500 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_medium-i_9xl: italic 500 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+
+  /* Bold */
+  --ce-fonts__roboto_bold_xs: normal 700 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold_sm: normal 700 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold: normal 700 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold_lg: normal 700 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold_xl: normal 700 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold_2xl: normal 700 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold_3xl: normal 700 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold_4xl: normal 700 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold_5xl: normal 700 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold_6xl: normal 700 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold_7xl: normal 700 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold_8xl: normal 700 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold_9xl: normal 700 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+
+  --ce-fonts__roboto_bold-i_xs: italic 700 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i_sm: italic 700 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i: italic 700 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i_lg: italic 700 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i_xl: italic 700 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i_2xl: italic 700 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i_3xl: italic 700 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i_4xl: italic 700 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i_5xl: italic 700 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i_6xl: italic 700 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i_7xl: italic 700 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i_8xl: italic 700 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_bold-i_9xl: italic 700 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+
+  /* Black */
+  --ce-fonts__roboto_black_xs: normal 900 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black_sm: normal 900 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black: normal 900 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black_lg: normal 900 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black_xl: normal 900 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black_2xl: normal 900 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black_3xl: normal 900 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black_4xl: normal 900 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black_5xl: normal 900 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black_6xl: normal 900 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black_7xl: normal 900 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black_8xl: normal 900 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black_9xl: normal 900 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+
+  --ce-fonts__roboto_black-i_xs: italic 900 var(--ce-typo_xs) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i_sm: italic 900 var(--ce-typo_sm) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i: italic 900 var(--ce-typo) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i_lg: italic 900 var(--ce-typo_lg) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i_xl: italic 900 var(--ce-typo_xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i_2xl: italic 900 var(--ce-typo_2xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i_3xl: italic 900 var(--ce-typo_3xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i_4xl: italic 900 var(--ce-typo_4xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i_5xl: italic 900 var(--ce-typo_5xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i_6xl: italic 900 var(--ce-typo_6xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i_7xl: italic 900 var(--ce-typo_7xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i_8xl: italic 900 var(--ce-typo_8xl) var(--ce-fonts__font-roboto);
+  --ce-fonts__roboto_black-i_9xl: italic 900 var(--ce-typo_9xl) var(--ce-fonts__font-roboto);
+}
