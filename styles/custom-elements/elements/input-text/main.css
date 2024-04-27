@@ -49,7 +49,7 @@
   border: none;
   color: inherit;
   width: 100%;
-  font: var(--ce-fonts_roboto);
+  font: var(--fnt-roboto);
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;

@@ -1,7 +1,7 @@
 .ce-heading {
-  --title-color: rgba(var(--ce-color-zinc-50));
+  --title-color: rgba(var(--clr-zinc_50));
 }
 
 .ce-heading .ce-heading__subtitle {
-  --subtitle-color: rgba(var(--ce-color-zinc-50), 0.6);
+  --subtitle-color: rgba(var(--clr-zinc_50), 0.6);
 }

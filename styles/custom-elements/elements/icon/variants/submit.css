@@ -1,3 +1,3 @@
 .ce-icon[data-variant='submit'] {
-  --icon-color: rgba(var(--ce-color-emerald-400), 1);
+  --icon-color: rgba(var(--clr-emerald_400), 1);
 }

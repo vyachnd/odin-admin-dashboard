@@ -1,7 +1,7 @@
 .ce-heading[data-variant='submit'] {
-  --title-color: rgba(var(--ce-color-emerald-500));
+  --title-color: rgba(var(--clr-emerald_500));
 }
 
 .ce-heading[data-variant='submit'] .ce-heading__subtitle {
-  --subtitle-color: rgba(var(--ce-color-emerald-50), 0.6);
+  --subtitle-color: rgba(var(--clr-emerald_50), 0.6);
 }

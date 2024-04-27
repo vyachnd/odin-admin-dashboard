@@ -1,7 +1,7 @@
 .ce-heading[data-variant='error'] {
-  --title-color: rgba(var(--ce-color-red-500));
+  --title-color: rgba(var(--clr-red_500));
 }
 
 .ce-heading[data-variant='error'] .ce-heading__subtitle {
-  --subtitle-color: rgba(var(--ce-color-red-50), 0.6);
+  --subtitle-color: rgba(var(--clr-red_50), 0.6);
 }

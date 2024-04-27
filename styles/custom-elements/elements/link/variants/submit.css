@@ -1,7 +1,7 @@
 .ce-link[data-variant='submit'] {
-  --link-color: rgba(var(--ce-color-emerald-400), 1);
-  --link-color_hover: rgba(var(--ce-color-emerald-400), 0.8);
-  --link-color_active: rgba(var(--ce-color-emerald-400), 0.6);
-  --link-color_focus: rgba(var(--ce-color-emerald-400), 0.8);
-  --link-color_visited: rgba(var(--ce-color-emerald-400), 0);
+  --link-color: rgba(var(--clr-emerald_400), 1);
+  --link-color_hover: rgba(var(--clr-emerald_400), 0.8);
+  --link-color_active: rgba(var(--clr-emerald_400), 0.6);
+  --link-color_focus: rgba(var(--clr-emerald_400), 0.8);
+  --link-color_visited: rgba(var(--clr-emerald_400), 0);
 }

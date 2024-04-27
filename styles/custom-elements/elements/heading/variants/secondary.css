@@ -1,7 +1,7 @@
 .ce-heading[data-variant='secondary'] {
-  --title-color: rgba(var(--ce-color-sky-500));
+  --title-color: rgba(var(--clr-sky_500));
 }
 
 .ce-heading[data-variant='secondary'] .ce-heading__subtitle {
-  --subtitle-color: rgba(var(--ce-color-sky-50), 0.6);
+  --subtitle-color: rgba(var(--clr-sky_50), 0.6);
 }

@@ -5,7 +5,7 @@
 }
 
 .ce-button[data-size='xs'] .ce-button__caption {
-  font: var(--ce-fonts_roboto_medium_xs);
+  font: var(--fnt-roboto_medium_xs);
 }
 
 .ce-button[data-size='xs'] .ce-button__icon {

@@ -26,12 +26,12 @@
 
 .ce-heading .ce-heading__title {
   color: inherit;
-  font: var(--ce-fonts_roboto_black);
+  font: var(--fnt-roboto_black);
 }
 
 .ce-heading .ce-heading__subtitle {
   display: flex;
   align-items: center;
-  font: var(--ce-fonts_roboto_medium_xs);
+  font: var(--fnt-roboto_medium_xs);
   white-space: break-spaces;
 }

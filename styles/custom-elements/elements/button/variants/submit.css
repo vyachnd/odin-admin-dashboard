@@ -1,38 +1,38 @@
 .ce-button[data-variant='submit'] {
-  --bg-color: rgba(var(--ce-color-emerald-700));
-  --text-color: rgba(var(--ce-color-emerald-100));
+  --bg-color: rgba(var(--clr-emerald_700));
+  --text-color: rgba(var(--clr-emerald_100));
 
-  --bg-color_hover: rgba(var(--ce-color-emerald-600));
-  --text-color_hover: rgba(var(--ce-color-emerald-50));
+  --bg-color_hover: rgba(var(--clr-emerald_600));
+  --text-color_hover: rgba(var(--clr-emerald_50));
 
-  --bg-color_active: rgba(var(--ce-color-emerald-500));
-  --text-color_active: rgba(var(--ce-color-emerald-50));
+  --bg-color_active: rgba(var(--clr-emerald_500));
+  --text-color_active: rgba(var(--clr-emerald_50));
 
-  --outline-color_focus: rgba(var(--ce-color-emerald-50));
+  --outline-color_focus: rgba(var(--clr-emerald_50));
 }
 
 .ce-button[data-variant='submit'][data-transparent] {
-  --bg-color: rgba(var(--ce-color-emerald-400), 0.12);
-  --text-color: rgba(var(--ce-color-emerald-400));
+  --bg-color: rgba(var(--clr-emerald_400), 0.12);
+  --text-color: rgba(var(--clr-emerald_400));
 
-  --bg-color_hover: rgba(var(--ce-color-emerald-400), 0.18);
-  --text-color_hover: rgba(var(--ce-color-emerald-300));
+  --bg-color_hover: rgba(var(--clr-emerald_400), 0.18);
+  --text-color_hover: rgba(var(--clr-emerald_300));
 
-  --bg-color_active: rgba(var(--ce-color-emerald-400), 0.24);
-  --text-color_active: rgba(var(--ce-color-emerald-50));
+  --bg-color_active: rgba(var(--clr-emerald_400), 0.24);
+  --text-color_active: rgba(var(--clr-emerald_50));
 
-  --outline-color_focus: rgba(var(--ce-color-emerald-400));
+  --outline-color_focus: rgba(var(--clr-emerald_400));
 }
 
 .ce-button[data-variant='submit']:not([data-fill]) {
   --bg-color: none;
-  --text-color: rgba(var(--ce-color-emerald-400));
+  --text-color: rgba(var(--clr-emerald_400));
 
-  --bg-color_hover: rgba(var(--ce-color-emerald-400), 0.08);
-  --text-color_hover: rgba(var(--ce-color-emerald-300));
+  --bg-color_hover: rgba(var(--clr-emerald_400), 0.08);
+  --text-color_hover: rgba(var(--clr-emerald_300));
 
-  --bg-color_active: rgba(var(--ce-color-emerald-400), 0.12);
-  --text-color_active: rgba(var(--ce-color-emerald-200));
+  --bg-color_active: rgba(var(--clr-emerald_400), 0.12);
+  --text-color_active: rgba(var(--clr-emerald_200));
 
-  --outline-color_focus: rgba(var(--ce-color-emerald-400));
+  --outline-color_focus: rgba(var(--clr-emerald_400));
 }
