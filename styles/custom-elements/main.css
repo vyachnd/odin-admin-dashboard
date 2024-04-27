@@ -1,5 +1,6 @@
-/* Reset */
-@import './reset.css';
+/* Third-party */
+@import './third-party/normalize.css';
+@import './third-party/reset.css';
 
 /* Globals */
 @import './__globals/colors.css';
