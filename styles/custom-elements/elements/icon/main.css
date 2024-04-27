@@ -4,9 +4,19 @@
 @import './types/sharp.css';
 
 /* Size */
-@import './sizes/base.css';
-@import './sizes/sm.css';
 @import './sizes/xs.css';
+@import './sizes/sm.css';
+@import './sizes/base.css';
+@import './sizes/lg.css';
+@import './sizes/xl.css';
+@import './sizes/2xl.css';
+@import './sizes/3xl.css';
+@import './sizes/4xl.css';
+@import './sizes/5xl.css';
+@import './sizes/6xl.css';
+@import './sizes/7xl.css';
+@import './sizes/8xl.css';
+@import './sizes/9xl.css';
 
 /* Variants */
 @import './variants/base.css';

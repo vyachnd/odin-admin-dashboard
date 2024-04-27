@@ -5,7 +5,3 @@
 .ce-link[data-size='xs'] .ce-link__caption {
   font: var(--fnt-roboto_medium_xs);
 }
-
-.ce-link[data-size='xs'] .ce-link__icon {
-  font-size: 16px;
-}

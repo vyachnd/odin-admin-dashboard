@@ -1,7 +1,7 @@
 /* Size */
-@import './sizes/base.css';
-@import './sizes/sm.css';
 @import './sizes/xs.css';
+@import './sizes/sm.css';
+@import './sizes/base.css';
 
 /* States */
 @import './states/active.css';

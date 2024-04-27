@@ -21,6 +21,15 @@ class CELink extends CreateElement {
   }
 
   setSettings(settings) {
+    const icons = this.children.filter((child) => child instanceof CEIcon);
+
+    icons.forEach((icon) => {
+      icon.setSettings({
+        ...icon.settings,
+        size: settings?.size,
+      });
+    });
+
     this.updateAttributes({
       target: '_blank',
       ...this.attributes,
@@ -44,7 +53,7 @@ class CELink extends CreateElement {
           ...child.attributes,
           class: [...(child.attributes?.class || []), 'ce-link__icon'],
         });
-        child.setSettings({ type: 'rounded', ...child.settings });
+        child.setSettings({ size: this.settings?.size, ...child.settings });
       } else if (typeof child === 'string') {
         children[i] = new CreateElement(
           'span',

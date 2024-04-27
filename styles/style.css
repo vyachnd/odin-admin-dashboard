@@ -7,5 +7,6 @@ body {
 }
 
 body {
-  background-color: rgba(var(--ce-color-zinc-950));
+  background-color: rgba(var(--clr-zinc_950));
+  color: rgba(var(--clr-zinc_50));
 }

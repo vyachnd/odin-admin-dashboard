@@ -7,7 +7,7 @@
   SETTINGS
   --------------------------------------------------------------------------------------------------
   Variant                     'base', 'secondary', 'submit', 'warning', 'error'
-  Size                        'base', 'sm', 'xs'
+  Size                        'xs', 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', '7xl', '8xl', '9xl'
   Type                        'outlined', 'rounded', 'sharp'
   Wght                        100, 200, 300, 400, 500, 600, 780
   Grade                       -25, 0, 200

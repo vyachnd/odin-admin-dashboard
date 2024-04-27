@@ -7,7 +7,3 @@
 .ce-button .ce-button__caption {
   font: var(--fnt-roboto_medium);
 }
-
-.ce-button .ce-button__icon {
-  font-size: 24px;
-}
