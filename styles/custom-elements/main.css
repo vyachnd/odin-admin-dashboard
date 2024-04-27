@@ -2,16 +2,17 @@
 @import './third-party/normalize.css';
 @import './third-party/reset.css';
 
-/* Globals */
-@import './__globals/colors.css';
-@import './__globals/typography.css';
-@import './__globals/positioning.css';
-@import './__globals/fonts/main.css';
+/* Colors */
+@import './colors.css';
+
+/* Typography */
+@import './typography.css';
+
+/* Positioning */
+@import './positioning.css';
+
+/* Fonts */
+@import './fonts/main.css';
 
 /* Elements */
-@import './button/main.css';
-@import './checkbox/main.css';
-@import './heading/main.css';
-@import './icon/main.css';
-@import './input-text/main.css';
-@import './link/main.css';
+@import './elements/main.css';
