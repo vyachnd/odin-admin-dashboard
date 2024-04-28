@@ -20,7 +20,7 @@ class CEHeading extends CreateElement {
           new CreateElement('h1', [settings?.title || 'Title'], { class: ['ce-heading__title'] }),
           new CreateElement('p', [
             'by ',
-            new CELink(['vyachnd'], { size: 'xs', variant: settings?.variant }, { href: 'https://www.github.com/vyachnd', class: ['ce-heading__link'] }),
+            new CELink(['@vyachnd'], { size: 'xs', variant: settings?.variant }, { href: 'https://www.github.com/vyachnd', class: ['ce-heading__link'] }),
           ], { class: ['ce-heading__subtitle'] }),
         ], { class: ['ce-heading__container'] }),
       ].filter((child) => child),
