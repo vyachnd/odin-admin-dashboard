@@ -1,5 +1,17 @@
 import CreateElement from './modules/createElement.js';
-import { CEButton, CEIcon, CELink } from './modules/custom-elements/init.js';
+import { CEButton, CEHeading, CEIcon, CELink } from './modules/custom-elements/init.js';
+
+class Wrapper extends CreateElement {
+  constructor(children, attributes, events) {
+    super('div', [], attributes, events);
+
+    this.#createWrapper(children);
+  }
+
+  #createWrapper(children) {
+    console.log(children);
+  }
+}
 
 const app = new CreateElement('div', [
   new CEIcon('dashboard', { size: 'xs' }),
@@ -25,6 +37,8 @@ const app = new CreateElement('div', [
   new CELink(['Hello', new CEIcon('box')], { size: 'xs' }),
   new CELink(['Hello', new CEIcon('box')], { size: 'sm' }),
   new CELink(['Hello', new CEIcon('box')], {}),
+
+  new CEHeading({ icon: 'box', title: 'Hello' }),
 ]);
 
 app.mount(document.body, true);
