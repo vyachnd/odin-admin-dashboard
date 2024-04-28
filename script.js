@@ -13,6 +13,9 @@ class Wrapper extends CreateElement {
   }
 }
 
+const link = document.createElement('a');
+link.textContent = 'Link';
+
 const app = new CreateElement('div', [
   new CEIcon('dashboard', { size: 'xs' }),
   new CEIcon('dashboard', { size: 'sm', variant: 'secondary' }),
@@ -39,6 +42,10 @@ const app = new CreateElement('div', [
   new CELink(['Hello', new CEIcon('box')], {}),
 
   new CEHeading({ icon: 'box', title: 'Hello' }),
+
+  'Привет!',
+  link,
+
 ]);
 
 app.mount(document.body, true);

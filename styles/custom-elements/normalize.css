@@ -32,6 +32,7 @@ h6 {
 /* Link */
 a {
   color: rgba(var(--clr-sky_400));
+  font: var(--fnt-roboto_medium);
   text-decoration: none;
 }
 a:hover {
