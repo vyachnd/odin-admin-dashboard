@@ -1,0 +1,20 @@
+@import './sidebar.css';
+@import './project.css';
+
+#app {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  #app .app__sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+
+  #app .app__main {
+    margin-left: 88px;
+  }
+}
