@@ -1,5 +1,5 @@
 @import './sidebar.css';
-@import './project.css';
+@import './header.css';
 
 #app {
   display: grid;
@@ -7,7 +7,38 @@
   height: 100%;
 }
 
+#app .app__main {
+  max-width: 1120px;
+  width: 100%;
+  display: grid;
+  grid:
+    'header header' min-content
+    'projects announcements'
+    'projects trending' auto / 1fr 320px;
+  gap: 16px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+#app .app__main > *:nth-child(1) {
+  grid-area: header;
+}
+#app .app__main > *:nth-child(2) {
+  grid-area: projects;
+}
+#app .app__main > *:nth-child(3) {
+  grid-area: announcements;
+}
+#app .app__main > *:nth-child(4) {
+  grid-area: trending;
+}
+
 @media (max-width: 768px) {
+  #app {
+    grid-template-columns: 1fr;
+  }
+
   #app .app__sidebar {
     position: fixed;
     top: 0;

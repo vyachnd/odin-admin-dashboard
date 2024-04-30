@@ -38,3 +38,8 @@ a {
 a:hover {
   color: rgba(var(--clr-sky_600));
 }
+
+/* Image */
+img {
+  display: block;
+}
