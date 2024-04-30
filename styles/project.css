@@ -1,0 +1,25 @@
+.project {
+  background-color: rgba(var(--clr-zinc_50), 0.04);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.project .project__title {
+  color: rgba(var(--clr-zinc_50));
+  font: var(--fnt-roboto_black);
+}
+
+.project .project__description {
+  color: rgba(var(--clr-zinc_50), 0.6);
+  font: var(--fnt-roboto);
+
+  margin-top: 4px;
+}
+
+.project .project__actions {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  justify-content: end;
+  gap: 6px;
+  margin-top: 16px;
+}

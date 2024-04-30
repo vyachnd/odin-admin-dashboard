@@ -1,51 +1,67 @@
 @import './sidebar.css';
 @import './header.css';
+@import './project.css';
 
+/* App */
 #app {
   display: grid;
   grid-template-columns: auto 1fr;
-  height: 100%;
 }
 
+/* Sidebar */
+#app .app__sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+/* Main */
 #app .app__main {
   max-width: 1120px;
-  width: 100%;
   display: grid;
   grid:
     'header header' min-content
-    'projects announcements'
-    'projects trending' auto / 1fr 320px;
+    'projects announcements' min-content
+    'projects trending' min-content
+    'projects ...' / 1fr 320px;
   gap: 16px;
   justify-content: center;
-  margin: 0 auto;
   padding: 16px;
+  margin: 0 auto;
 }
 
-#app .app__main > *:nth-child(1) {
+.app__main .main__block:nth-child(1) {
   grid-area: header;
 }
-#app .app__main > *:nth-child(2) {
+.app__main .main__block:nth-child(2) {
   grid-area: projects;
 }
-#app .app__main > *:nth-child(3) {
+.app__main .main__block:nth-child(3) {
   grid-area: announcements;
 }
-#app .app__main > *:nth-child(4) {
+.app__main .main__block:nth-child(4) {
   grid-area: trending;
 }
 
-@media (max-width: 768px) {
-  #app {
-    grid-template-columns: 1fr;
-  }
+/* Blocks */
+.main__block {
+  align-items: start;
+}
 
-  #app .app__sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-  }
+.main__block .block__title {
+  color: rgba(var(--clr-zinc_50), 0.4);
+  font: var(--fnt-roboto_black_sm);
+  text-transform: uppercase;
+}
 
-  #app .app__main {
-    margin-left: 88px;
-  }
+/* Block Projects */
+.app__main .main__block:nth-child(2) .block__title {
+  grid-area: 1 / 2 span;
+}
+
+.app__main .main__block:nth-child(2) {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 8px;
 }
