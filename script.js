@@ -1,8 +1,12 @@
+import helpers from './libraries/helpers.js';
+import Announcement from './modules/announcement.js';
 import CreateElement from './modules/createElement.js';
 import Header from './modules/header.js';
 import Project from './modules/project.js';
 import Sidebar from './modules/sidebar.js';
+import Trending from './modules/tranding.js';
 
+// START AI generated data
 const projects = [
   {
     "title": "EcoSmart Home System",
@@ -130,6 +134,283 @@ const projects = [
   }
 ];
 
+const announcements = [
+  {
+    "title": "New Message",
+    "description": "You have received a new message from a user.",
+    "variant": "base"
+  },
+  {
+    "title": "Payment Received",
+    "description": "Your payment has been successfully processed.",
+    "variant": "base"
+  },
+  {
+    "title": "Account Update",
+    "description": "Your account information has been updated.",
+    "variant": "base"
+  },
+  {
+    "title": "Reminder",
+    "description": "Don't forget about your upcoming appointment tomorrow.",
+    "variant": "base"
+  },
+  {
+    "title": "Network Error",
+    "description": "Failed to connect to the server. Please check your internet connection.",
+    "variant": "error"
+  },
+  {
+    "title": "Invalid Input",
+    "description": "Please enter valid information in all required fields.",
+    "variant": "error"
+  },
+  {
+    "title": "Access Denied",
+    "description": "You do not have permission to access this resource.",
+    "variant": "error"
+  },
+  {
+    "title": "Success",
+    "description": "Operation completed successfully.",
+    "variant": "base"
+  },
+  {
+    "title": "Low Battery",
+    "description": "Your device battery is running low. Please recharge soon.",
+    "variant": "warning"
+  },
+  {
+    "title": "Deadline Approaching",
+    "description": "The deadline for your project is approaching. Complete your tasks on time.",
+    "variant": "warning"
+  },
+  {
+    "title": "Unexpected Behavior",
+    "description": "The application encountered unexpected behavior. Please try again later.",
+    "variant": "warning"
+  },
+  {
+    "title": "Action Required",
+    "description": "You need to take action on your account settings to proceed.",
+    "variant": "secondary"
+  },
+  {
+    "title": "File Upload Error",
+    "description": "Failed to upload the file. Please try again.",
+    "variant": "error"
+  },
+  {
+    "title": "Confirmation Required",
+    "description": "Please confirm your email address to proceed.",
+    "variant": "secondary"
+  },
+  {
+    "title": "Update Available",
+    "description": "A new update is available. Please install it to access new features.",
+    "variant": "secondary"
+  },
+  {
+    "title": "Subscription Expired",
+    "description": "Your subscription has expired. Renew now to continue using our services.",
+    "variant": "error"
+  },
+  {
+    "title": "Scheduled Maintenance",
+    "description": "Our website will be undergoing scheduled maintenance tonight. Sorry for the inconvenience.",
+    "variant": "warning"
+  },
+  {
+    "title": "System Overload",
+    "description": "Our servers are experiencing high traffic. Expect slower response times.",
+    "variant": "warning"
+  },
+  {
+    "title": "Welcome",
+    "description": "Welcome to our platform! Start exploring now.",
+    "variant": "base"
+  },
+  {
+    "title": "Password Reset",
+    "description": "A password reset link has been sent to your email address.",
+    "variant": "base"
+  },
+  {
+    "title": "Feedback Received",
+    "description": "Thank you for your feedback. We appreciate your input.",
+    "variant": "base"
+  },
+  {
+    "title": "Out of Stock",
+    "description": "The item you are looking for is currently out of stock.",
+    "variant": "warning"
+  },
+  {
+    "title": "Session Expired",
+    "description": "Your session has expired. Please log in again to continue.",
+    "variant": "error"
+  },
+  {
+    "title": "New Feature",
+    "description": "Explore our new feature introduced in the latest update.",
+    "variant": "base"
+  },
+  {
+    "title": "Account Locked",
+    "description": "Your account has been temporarily locked due to multiple failed login attempts.",
+    "variant": "error"
+  },
+  {
+    "title": "Privacy Policy Update",
+    "description": "Our privacy policy has been updated. Please review the changes.",
+    "variant": "secondary"
+  },
+  {
+    "title": "Survey Invitation",
+    "description": "We invite you to participate in our survey to help us improve our services.",
+    "variant": "base"
+  },
+  {
+    "title": "Connection Lost",
+    "description": "Connection to the server has been lost. Reconnecting...",
+    "variant": "warning"
+  },
+  {
+    "title": "Invalid Credentials",
+    "description": "The username or password you entered is incorrect. Please try again.",
+    "variant": "error"
+  },
+  {
+    "title": "Terms of Service Update",
+    "description": "Our terms of service have been updated. Please review the changes.",
+    "variant": "secondary"
+  }
+];
+
+const trending = [
+  {
+    "tag": "@user123",
+    "lastProject": "Cosmic Explorer"
+  },
+  {
+    "tag": "@eventorganizer",
+    "lastProject": "DreamScape Network"
+  },
+  {
+    "tag": "@developer456",
+    "lastProject": "Eternal Echo"
+  },
+  {
+    "tag": "@designer789",
+    "lastProject": "Infinite Horizon"
+  },
+  {
+    "tag": "@userxyz",
+    "lastProject": "Lunar Dreamscape"
+  },
+  {
+    "tag": "@tester321",
+    "lastProject": "Quantum Quest"
+  },
+  {
+    "tag": "@manager007",
+    "lastProject": "Starlight Symphony"
+  },
+  {
+    "tag": "@analyst999",
+    "lastProject": "Timeless Trails"
+  },
+  {
+    "tag": "@user456",
+    "lastProject": "Galactic Guardian"
+  },
+  {
+    "tag": "@writer123",
+    "lastProject": "Celestial Cascade"
+  },
+  {
+    "tag": "@photographer456",
+    "lastProject": "Nebula Nexus"
+  },
+  {
+    "tag": "@user789",
+    "lastProject": "Stellar Symphony"
+  },
+  {
+    "tag": "@userabc",
+    "lastProject": "Solar Serenade"
+  },
+  {
+    "tag": "@userxyz",
+    "lastProject": "Interstellar Odyssey"
+  },
+  {
+    "tag": "@user123",
+    "lastProject": "Aurora Alliance"
+  },
+  {
+    "tag": "@eventorganizer",
+    "lastProject": "Infinity Inception"
+  },
+  {
+    "tag": "@developer456",
+    "lastProject": "Beyond Boundaries"
+  },
+  {
+    "tag": "@designer789",
+    "lastProject": "Eclipse Empyrean"
+  },
+  {
+    "tag": "@userxyz",
+    "lastProject": "Galaxy Genesis"
+  },
+  {
+    "tag": "@tester321",
+    "lastProject": "Nova Nomad"
+  },
+  {
+    "tag": "@manager007",
+    "lastProject": "Cosmic Citadel"
+  },
+  {
+    "tag": "@analyst999",
+    "lastProject": "Supernova Symphony"
+  },
+  {
+    "tag": "@user456",
+    "lastProject": "Orbital Overture"
+  },
+  {
+    "tag": "@writer123",
+    "lastProject": "Infinity Illumination"
+  },
+  {
+    "tag": "@photographer456",
+    "lastProject": "Celestial Conquest"
+  },
+  {
+    "tag": "@user789",
+    "lastProject": "Cosmic Chronicles"
+  },
+  {
+    "tag": "@userabc",
+    "lastProject": "Astral Adventure"
+  },
+  {
+    "tag": "@userxyz",
+    "lastProject": "Interstellar Insight"
+  },
+  {
+    "tag": "@user123",
+    "lastProject": "Stellar Serenity"
+  },
+  {
+    "tag": "@eventorganizer",
+    "lastProject": "Eternal Embrace"
+  }
+];
+// END AI generated data
+
 const app = new CreateElement('div', [
   new Sidebar({ class: ['app__sidebar'] }),
   new CreateElement('main', [
@@ -139,17 +420,31 @@ const app = new CreateElement('div', [
     new CreateElement('div', [
       new CreateElement('h3', ['Projects'], { class: ['block__title'] }),
 
-      ...(projects).map(({ title, description }) => new Project({ title, description, actions: [Math.random() < 0.5, Math.random() < 0.2, Math.random() > 0.8] })),
+      ...(projects).map((data) => new Project({ ...data, actions: [Math.random() < 0.5, Math.random() < 0.2, Math.random() > 0.8] })),
     ], { class: ['main__block'] }),
 
     // Announcements
     new CreateElement('div', [
       new CreateElement('h3', ['Announcements'], { class: ['block__title'] }),
+
+      ...(() => {
+        const from = helpers.fromTo(0, trending.length - 4);
+        const to = from + 4;
+
+        return announcements.slice(from, to).map((data) => new Announcement(data));
+      })(),
     ], { class: ['main__block'] }),
 
     // Trending
     new CreateElement('div', [
       new CreateElement('h3', ['Trending'], { class: ['block__title'] }),
+
+      ...(() => {
+        const from = helpers.fromTo(0, trending.length - 7);
+        const to = from + 7;
+
+        return trending.slice(from, to).map((data) => new Trending({ image: `https://avatars.githubusercontent.com/u/${Math.floor(helpers.fromTo(0, 9999999))}?v=4`, ...data }));
+      })(),
     ], { class: ['main__block'] }),
   ], { class: ['app__main'] }),
 ], { id: 'app' });

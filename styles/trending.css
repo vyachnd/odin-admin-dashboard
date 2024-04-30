@@ -1,0 +1,33 @@
+.trending {
+  background-color: rgba(var(--clr-zinc_50), 0.04);
+  border-radius: 6px;
+  padding: 12px;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto min-content;
+  column-gap: 12px;
+  transition: background-color 0.15s;
+}
+.trending:hover {
+  background-color: rgba(var(--clr-zinc_50), 0.1);
+  cursor: pointer;
+}
+.trending:active {
+  background-color: rgba(var(--clr-zinc_50), 0.12);
+  cursor: pointer;
+}
+
+.trending .trending__avatar {
+  border-radius: 50%;
+  grid-area: span 2;
+}
+
+.trending .trending__tag {
+  font: var(--fnt-roboto_black_sm);
+}
+
+.trending .trending__lastProject {
+  color: rgba(var(--clr-zinc_50), 0.6);
+  font: var(--fnt-roboto_medium_sm);
+}

@@ -1,6 +1,8 @@
 @import './sidebar.css';
 @import './header.css';
 @import './project.css';
+@import './announcement.css';
+@import './trending.css';
 
 /* App */
 #app {
@@ -52,6 +54,12 @@
   color: rgba(var(--clr-zinc_50), 0.4);
   font: var(--fnt-roboto_black_sm);
   text-transform: uppercase;
+}
+
+.app__main .main__block:nth-child(3),
+.app__main .main__block:nth-child(4) {
+  display: grid;
+  row-gap: 8px;
 }
 
 /* Block Projects */

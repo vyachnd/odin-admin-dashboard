@@ -1,0 +1,85 @@
+.announcement {
+  background-color: rgba(var(--clr-zinc_50), 0.04);
+  border-radius: 6px;
+  padding: 12px;
+  transition: background-color 0.15s;
+}
+.announcement:hover {
+  background-color: rgba(var(--clr-zinc_50), 0.1);
+  cursor: pointer;
+}
+.announcement:active {
+  background-color: rgba(var(--clr-zinc_50), 0.12);
+  cursor: pointer;
+}
+
+.announcement .announcement__title {
+  margin-bottom: 4px;
+  font: var(--fnt-roboto_black_sm);
+}
+
+.announcement .announcement__description {
+  color: rgba(var(--clr-zinc_50), 0.8);
+  font: var(--fnt-roboto_sm);
+}
+
+/* Variants */
+.announcement[data-variant='secondary'] {
+  background-color: rgba(var(--clr-sky_400), 0.1);
+}
+.announcement[data-variant='secondary']:hover {
+  background-color: rgba(var(--clr-sky_400), 0.2);
+  cursor: pointer;
+}
+.announcement[data-variant='secondary']:active {
+  background-color: rgba(var(--clr-sky_400), 0.24);
+  cursor: pointer;
+}
+.announcement[data-variant='secondary'] .announcement__title {
+  color: rgba(var(--clr-sky_500));
+}
+
+.announcement[data-variant='submit'] {
+  background-color: rgba(var(--clr-emerald_400), 0.1);
+}
+.announcement[data-variant='submit']:hover {
+  background-color: rgba(var(--clr-emerald_400), 0.2);
+  cursor: pointer;
+}
+.announcement[data-variant='submit']:active {
+  background-color: rgba(var(--clr-emerald_400), 0.24);
+  cursor: pointer;
+}
+.announcement[data-variant='submit'] .announcement__title {
+  color: rgba(var(--clr-emerald_500));
+}
+
+.announcement[data-variant='warning'] {
+  background-color: rgba(var(--clr-yellow_400), 0.1);
+}
+.announcement[data-variant='warning']:hover {
+  background-color: rgba(var(--clr-yellow_400), 0.2);
+  cursor: pointer;
+}
+.announcement[data-variant='warning']:active {
+  background-color: rgba(var(--clr-yellow_400), 0.24);
+  cursor: pointer;
+}
+.announcement[data-variant='warning'] .announcement__title {
+  color: rgba(var(--clr-yellow_500));
+}
+
+.announcement[data-variant='error'] {
+  background-color: rgba(var(--clr-red_400), 0.1);
+}
+.announcement[data-variant='error']:hover {
+  background-color: rgba(var(--clr-red_400), 0.2);
+  cursor: pointer;
+}
+.announcement[data-variant='error']:active {
+  background-color: rgba(var(--clr-red_400), 0.24);
+  cursor: pointer;
+}
+.announcement[data-variant='error'] .announcement__title {
+  color: rgba(var(--clr-red_500));
+}
