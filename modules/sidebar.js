@@ -60,8 +60,6 @@ class Sidebar extends CreateElement {
         ], { class: ['nav__list'] }),
       ], { class: ['sidebar__nav'] }),
     ]);
-
-    this.toggleMenu();
   }
 
   toggleBtn(btn) {
@@ -95,6 +93,14 @@ class Sidebar extends CreateElement {
     });
 
     this.menuClosed = !this.menuClosed;
+
+    this.emitter.emit('toggleMenu', this.menuClosed);
+  }
+
+  mount(parent, isPrepend) {
+    super.mount(parent, isPrepend);
+
+    this.toggleMenu();
   }
 }
 

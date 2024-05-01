@@ -287,7 +287,7 @@ const announcements = [
   }
 ];
 
-const trending = [
+const trendings = [
   {
     "tag": "@user123",
     "lastProject": "Cosmic Explorer"
@@ -411,46 +411,71 @@ const trending = [
 ];
 // END AI generated data
 
+const sidebar = new Sidebar({ class: ['app__sidebar'] });
+sidebar.emitter.subscribe('toggleMenu', (closed) => {
+  const htmlElement = document.documentElement;
+
+  if (!closed) {
+    htmlElement.dataset.menuClosed = '';
+  } else {
+    delete htmlElement.dataset.menuClosed;
+  }
+});
+
 const app = new CreateElement('div', [
-  new Sidebar({ class: ['app__sidebar'] }),
+  sidebar,
   new CreateElement('main', [
-    new Header({ class: ['main__block'] }),
+    new Header({ class: ['main__block', 'main__block_header'] }),
 
-    // Projects
     new CreateElement('div', [
-      new CreateElement('h3', ['Projects'], { class: ['block__title'] }),
+      // Projects
+      new CreateElement('div', [
+        new CreateElement('h3', ['Projects'], { class: ['block__title'] }),
 
-      ...(() => {
-        const from = helpers.fromTo(0, projects.length - 12);
-        const to = from + 12;
+        new CreateElement('ul', [
+          ...(() => {
+            const from = helpers.fromTo(0, projects.length - 12);
+            const to = from + 12;
 
-        return projects.slice(from, to).map((data) => new Project({ ...data, actions: [Math.random() < 0.5, Math.random() < 0.2, Math.random() > 0.8] }));
-      })(),
-    ], { class: ['main__block'] }),
+            return projects.slice(from, to).map((data) => new CreateElement('li', [
+              new Project({ ...data, actions: [Math.random() < 0.5, Math.random() < 0.2, Math.random() > 0.8] }),
+            ], { class: ['list__item'] }));
+          })(),
+        ], { class: ['block__list'] }),
+      ], { class: ['main__block', 'main__block_projects'] }),
 
-    // Announcements
-    new CreateElement('div', [
-      new CreateElement('h3', ['Announcements'], { class: ['block__title'] }),
+      // Announcements
+      new CreateElement('div', [
+        new CreateElement('h3', ['Announcements'], { class: ['block__title'] }),
 
-      ...(() => {
-        const from = helpers.fromTo(0, announcements.length - 4);
-        const to = from + 4;
+        new CreateElement('ul', [
+          ...(() => {
+            const from = helpers.fromTo(0, announcements.length - 4);
+            const to = from + 4;
 
-        return announcements.slice(from, to).map((data) => new Announcement(data));
-      })(),
-    ], { class: ['main__block'] }),
+            return announcements.slice(from, to).map((data) => new CreateElement('li', [
+              new Announcement(data),
+            ], { class: ['list__item'] }));
+          })(),
+        ], { class: ['block__list'] }),
+      ], { class: ['main__block', 'main__block_announcements'] }),
 
-    // Trending
-    new CreateElement('div', [
-      new CreateElement('h3', ['Trending'], { class: ['block__title'] }),
+      // Trendings
+      new CreateElement('div', [
+        new CreateElement('h3', ['Trendings'], { class: ['block__title'] }),
 
-      ...(() => {
-        const from = helpers.fromTo(0, trending.length - 5);
-        const to = from + 5;
+        new CreateElement('ul', [
+          ...(() => {
+            const from = helpers.fromTo(0, trendings.length - 5);
+            const to = from + 5;
 
-        return trending.slice(from, to).map((data) => new Trending({ image: `https://avatars.githubusercontent.com/u/${Math.floor(helpers.fromTo(0, 9999999))}?v=4`, ...data }));
-      })(),
-    ], { class: ['main__block'] }),
+            return trendings.slice(from, to).map((data) => new CreateElement('li', [
+              new Trending({ image: `https://avatars.githubusercontent.com/u/${Math.floor(helpers.fromTo(0, 9999999))}?v=4`, ...data }),
+            ], { class: ['list__item'] }));
+          })(),
+        ], { class: ['block__list'] }),
+      ], { class: ['main__block', 'main__block_trendings'] }),
+    ], { class: ['main__block', 'main__block-container'] }),
   ], { class: ['app__main'] }),
 ], { id: 'app' });
 

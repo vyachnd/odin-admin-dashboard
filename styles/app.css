@@ -19,35 +19,20 @@
 
 /* Main */
 #app .app__main {
+  width: 100%;
   max-width: 1120px;
   display: grid;
-  grid:
-    'header header' min-content
-    'projects announcements' min-content
-    'projects trending' min-content
-    'projects ...' / 1fr 320px;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 1fr;
   gap: 16px;
   justify-content: center;
   padding: 16px;
   margin: 0 auto;
 }
 
-.app__main .main__block:nth-child(1) {
-  grid-area: header;
-}
-.app__main .main__block:nth-child(2) {
-  grid-area: projects;
-}
-.app__main .main__block:nth-child(3) {
-  grid-area: announcements;
-}
-.app__main .main__block:nth-child(4) {
-  grid-area: trending;
-}
-
-/* Blocks */
-.main__block {
-  align-items: start;
+/* Block */
+.main__block .block__title:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .main__block .block__title {
@@ -56,20 +41,79 @@
   text-transform: uppercase;
 }
 
-.app__main .main__block:nth-child(3),
-.app__main .main__block:nth-child(4) {
+/* Block Container */
+.main__block-container {
   display: grid;
-  row-gap: 8px;
+  grid:
+    'projects announcements' min-content
+    'projects trendings' min-content
+    'projects ...' / 1fr 320px;
+  gap: 16px;
 }
 
-/* Block Projects */
-.app__main .main__block:nth-child(2) .block__title {
-  grid-area: 1 / 2 span;
+.main__block.main__block_projects {
+  grid-area: projects;
+}
+.main__block.main__block_announcements {
+  grid-area: announcements;
+}
+.main__block.main__block_trendings {
+  grid-area: trendings;
 }
 
-.app__main .main__block:nth-child(2) {
+/* Projects List */
+.main__block.main__block_projects .block__list {
   display: grid;
-  grid-auto-rows: min-content;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 8px;
+}
+
+/* Anouncements and Trendings List */
+.main__block.main__block_announcements .block__list,
+.main__block.main__block_trendings .block__list {
+  display: grid;
+  gap: 4px;
+}
+
+/* Responsive */
+@media screen and not (min-width: 1008px) {
+  #app {
+    grid-template-columns: 1fr;
+  }
+
+  #app .app__sidebar {
+    position: fixed;
+  }
+
+  #app .app__main {
+    width: calc(100% - 88px);
+    margin-left: 88px;
+  }
+}
+
+@media screen and not (min-width: 776px) {
+  .main__block-container {
+    grid:
+      'trendings' min-content
+      'announcements' min-content
+      'projects' min-content;
+  }
+
+  .main__block.main__block_announcements .block__list,
+  .main__block.main__block_trendings .block__list {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 4px;
+  }
+}
+
+@media screen and not (min-width: 670px) {
+  .main__block.main__block_header .header__container:last-child {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 16px;
+  }
+
+  .main__block.main__block_header .header__container:last-child .header__actions {
+    margin-left: 0;
+  }
 }
