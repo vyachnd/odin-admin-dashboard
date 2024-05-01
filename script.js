@@ -420,7 +420,12 @@ const app = new CreateElement('div', [
     new CreateElement('div', [
       new CreateElement('h3', ['Projects'], { class: ['block__title'] }),
 
-      ...(projects).map((data) => new Project({ ...data, actions: [Math.random() < 0.5, Math.random() < 0.2, Math.random() > 0.8] })),
+      ...(() => {
+        const from = helpers.fromTo(0, projects.length - 12);
+        const to = from + 12;
+
+        return projects.slice(from, to).map((data) => new Project({ ...data, actions: [Math.random() < 0.5, Math.random() < 0.2, Math.random() > 0.8] }));
+      })(),
     ], { class: ['main__block'] }),
 
     // Announcements
@@ -428,7 +433,7 @@ const app = new CreateElement('div', [
       new CreateElement('h3', ['Announcements'], { class: ['block__title'] }),
 
       ...(() => {
-        const from = helpers.fromTo(0, trending.length - 4);
+        const from = helpers.fromTo(0, announcements.length - 4);
         const to = from + 4;
 
         return announcements.slice(from, to).map((data) => new Announcement(data));
@@ -440,8 +445,8 @@ const app = new CreateElement('div', [
       new CreateElement('h3', ['Trending'], { class: ['block__title'] }),
 
       ...(() => {
-        const from = helpers.fromTo(0, trending.length - 7);
-        const to = from + 7;
+        const from = helpers.fromTo(0, trending.length - 5);
+        const to = from + 5;
 
         return trending.slice(from, to).map((data) => new Trending({ image: `https://avatars.githubusercontent.com/u/${Math.floor(helpers.fromTo(0, 9999999))}?v=4`, ...data }));
       })(),
